@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calculator</h1>
+      <hr />
+    </header>
+    <main class="calculator">
+      <input type="text" id="input" />
+      <div id="buttonsGrid">
+        <button class="buttons percent" data-value="/100">%</button>
+        <button class="buttons root" data-value="">√</button>
+        <button class="buttons plus" data-value="+">+</button>
+        <button class="buttons minus" data-value="-">-</button>
+        <button class="buttons mult" data-value="*">&times;</button>
+        <button class="buttons division" data-value="/">÷</button>
+        <button class="equal" id="equal">=</button>
+
+        <button class="buttons seven" data-value="7">7</button>
+        <button class="buttons eight" data-value="8">8</button>
+        <button class="buttons nine" data-value="9">9</button>
+
+        <button class="buttons four" data-value="4">4</button>
+        <button class="buttons five" data-value="5">5</button>
+        <button class="buttons six" data-value="6">6</button>
+
+        <button class="buttons one" data-value="1">1</button>
+        <button class="buttons two" data-value="2">2</button>
+        <button class="buttons three" data-value="3">3</button>
+
+        <button class="buttons zero" data-value="0">0</button>
+        <button class="buttons dot" data-value=".">.</button>
+        <button class="buttons clear" id="clear">AC</button>
+      </div>
+    </main>
+  </body>
+</html>

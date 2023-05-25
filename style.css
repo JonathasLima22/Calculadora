@@ -1,0 +1,114 @@
+body {
+  background-color: #2a2a4b;
+  color: whitesmoke;
+}
+
+.calculator {
+  background-color: black;
+  width: 400px;
+  margin: 0 auto;
+  align-content: center;
+  box-shadow: 0 5px 5px #99999936;
+  padding: 10px 10px 15px 10px;
+}
+
+input {
+  background-color: aliceblue;
+  border: 1.5px solid grey;
+  height: 50px;
+  margin: 0 0 5px 0;
+  text-align: end;
+  font-size: 2.02rem;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#buttonsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(50px, 50px);
+  gap: 6px 3px;
+  grid-template-areas:
+    "seven eight nine percent root"
+    "four five six mult division"
+    "one two three plus minus"
+    "nill ponto clear plus equal";
+}
+
+.buttons {
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 0 3px #999;
+  transition: 0.2s;
+}
+
+.buttons:hover {
+  background-color: rgb(230, 243, 255);
+}
+
+.buttons:active {
+  background-color: aliceblue;
+  box-shadow: 0 2px #666;
+  transform: translateY(3px);
+}
+
+.percent {
+  grid-area: percent;
+}
+.root {
+  grid-area: root;
+}
+.plus {
+  grid-area: plus;
+}
+.minus {
+  grid-area: minus;
+}
+.mult {
+  grid-area: mult;
+}
+.division {
+  grid-area: division;
+}
+.equal {
+  grid-area: equal;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.zero {
+  grid-area: nill;
+}
+.clear {
+  grid-area: clear;
+}
+.dot {
+  grid-area: ponto;
+}
